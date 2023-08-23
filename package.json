@@ -1,14 +1,18 @@
 {
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev --parallel",
+    "dev": "turbo run dev --parallel",
     "lint": "turbo lint",
-    "web": "yarn workspace web",
-    "api": "yarn workspace api"
+    "web": "turbo run dev --filter @org/web",
+    "api": "turbo run dev --filter @org/web",
+    "@org/web": "yarn workspace @org/web",
+    "@org/api": "yarn workspace @org/api",
+    "@org/commons": "yarn workspace @org/commons"
   },
   "devDependencies": {
     "eslint": "7.32.0",
