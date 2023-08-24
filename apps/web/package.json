@@ -1,13 +1,13 @@
 {
   "name": "@org/web",
   "version": "1.0.0",
+  "license": "ISC",
   "scripts": {
     "type-check": "tsc",
     "dev": "webpack serve --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.prod.js --mode production",
     "lint": "eslint ."
   },
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/plugin-proposal-class-properties": "^7.17.12",
