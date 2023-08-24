@@ -15,8 +15,10 @@
     "@org/commons": "yarn workspace @org/commons"
   },
   "devDependencies": {
+    "@org/eslint-config": "*",
     "eslint": "7.32.0",
     "prettier": "^2.5.1",
     "turbo": "^1.9.3"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }

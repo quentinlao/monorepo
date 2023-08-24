@@ -16,4 +16,4 @@ app.get('/workspaces', (_, response) => {
   response.json({ data: workspaces, name: toto });
 });
 
-app.listen(port, () => console.log(`Listening on http://localhost:${port}`));
+app.listen(port, () => console.info(`Listening on http://localhost:${port}`));
