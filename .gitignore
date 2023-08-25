@@ -1,0 +1,11 @@
+# gitignore react
+node_modules/
+*~
+build/
+dist/
+.module-cache
+.vscode
+*.env
+
+# turborepo
+.turbo
