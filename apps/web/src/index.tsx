@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client';
-import { Hello } from './Hello/Hello';
+import { HelloWorld } from './HelloWorld/HelloWorld';
 
 const App = () => {
-  return <Hello />;
+  return <HelloWorld />;
 };
 
 const container = document.getElementById('app');

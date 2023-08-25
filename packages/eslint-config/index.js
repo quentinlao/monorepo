@@ -15,12 +15,12 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'warn',
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
-    'no-redeclare': 'error', // Adding the no-redeclare rule for duplicated variable declarations
+    'no-redeclare': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
   },
   settings: {
     react: {
-      version: 'detect', // This will automatically detect the installed React version
+      version: 'detect',
     },
   },
 
@@ -33,7 +33,7 @@ module.exports = {
     'apps/*/*.config.*.js',
   ],
   parserOptions: {
-    ecmaVersion: 2021, // Enable support for modern ES syntax
-    sourceType: 'module', // Specify ES module syntax
+    ecmaVersion: 2021,
+    sourceType: 'module',
   },
 };

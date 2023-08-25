@@ -1,19 +1,20 @@
 import cors from 'cors';
 import express from 'express';
-import { toto, Workspace } from '@org/commons';
+import { JOHN, HelloWorldType } from '@org/commons';
 
 const app = express();
-const port = 8085;
+const HOST = 'http://localhost';
+const API_PORT = 8085;
+const WEB_PORT = 3000;
+const URL = `${HOST}:${WEB_PORT}`;
+app.use(cors({ origin: URL }));
 
-app.use(cors({ origin: 'http://localhost:3000' }));
-
-app.get('/workspaces', (_, response) => {
-  const workspaces: Workspace[] = [
-    { name: '@org/api', version: '1.0.0' },
-    { name: '@org/web', version: '1.0.0' },
-    { name: '@org/commons', version: '1.0.0' },
-  ];
-  response.json({ data: workspaces, name: toto });
+app.get('/helloWorld', (_, response) => {
+  const helloWorld: HelloWorldType = {
+    name: JOHN,
+    welcome: 'Hello world',
+  };
+  response.json({ data: helloWorld });
 });
 
-app.listen(port, () => console.info(`Listening on http://localhost:${port}`));
+app.listen(API_PORT, () => console.info(`Listening on ${URL}`));

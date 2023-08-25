@@ -1,4 +1,4 @@
-export type Workspace = {
+export type HelloWorldType = {
   name: string;
-  version: string;
+  welcome: string;
 };
