@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "ES2019", // Updated target to ES2019
-    "module": "CommonJS", // CommonJS is the module format used in Node.js
+    "target": "ES2019", 
+    "module": "CommonJS", 
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true, // No need to emit JavaScript files for Node.js projects
+    "noEmit": true, 
     "skipLibCheck": true,
-    "types": ["node"], // Include Node.js types for better type checking
+    "types": ["node"], 
     "jsx": "preserve"
   },
   "include": ["./src"]
