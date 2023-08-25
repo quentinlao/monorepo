@@ -77,7 +77,6 @@ yarn @org/api --command
 -   Babel : JS compiler ECMAScript 2015+ [babel](https://babeljs.io/docs/en/) (arrow function, and so on).
 -   Prettier : [prettier](https://prettier.io/) configuration with VScode
 -   ESlint : [ESlint](https://eslint.org/) linter fix auto config VScode
--   Jest : [Jest](https://jestjs.io/fr/) unit test
 -   dotenv to configure .env
 
 ## Inspiration for next improvement 
